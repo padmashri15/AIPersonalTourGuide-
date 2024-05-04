@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:id="@+id/root_home">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/search"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"  />
+
+                <TextView
+                    android:id="@+id/txt_dicovernew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/discover_new_places"
+                    app:layout_constraintStart_toStartOf="@id/search"
+                    app:layout_constraintTop_toBottomOf="@id/search"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/alleypalace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/alley_palace"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="@id/txt_dicovernew"
+                    app:layout_constraintTop_toBottomOf="@id/txt_dicovernew" />
+
+                <ImageView
+                    android:id="@+id/coeurds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coeurdes_appes"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toEndOf="@id/alleypalace"
+                    app:layout_constraintTop_toBottomOf="@id/txt_dicovernew" />
+
+
+                <TextView
+                    android:id="@+id/txt_recommended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/recommended"
+                    app:layout_constraintStart_toStartOf="@id/txt_dicovernew"
+                    app:layout_constraintTop_toBottomOf="@id/alleypalace"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/aspen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/explore_aspen"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="@id/txt_recommended"
+                    app:layout_constraintTop_toBottomOf="@id/txt_recommended" />
+
+                <ImageView
+                    android:id="@+id/luxurious_aspen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/luxurious_aspen"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@id/aspen"
+                    app:layout_constraintTop_toBottomOf="@id/txt_recommended" />
+
+                <TextView
+                    android:id="@+id/txt_destinations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/top_destinations"
+                    app:layout_constraintStart_toStartOf="@id/txt_dicovernew"
+                    app:layout_constraintTop_toBottomOf="@id/luxurious_aspen"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/rome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rome"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toStartOf="@id/txt_destinations"
+                    app:layout_constraintTop_toBottomOf="@id/txt_destinations" />
+
+                <ImageView
+                    android:id="@+id/london"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/london"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@id/rome"
+                    app:layout_constraintTop_toBottomOf="@id/txt_destinations" />
+
+                <ImageView
+                    android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/assist"
+                    android:src="@drawable/chat_button"
+                    android:layout_marginBottom="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

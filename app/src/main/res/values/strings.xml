@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AI Personal Guide</string>
+    <string name="discover_new_places">Discover new places</string>
+    <string name="recommended">Recommended</string>
+    <string name="top_destinations">Top Destinations</string>
+    <string name="assist">assist</string>
+</resources>
